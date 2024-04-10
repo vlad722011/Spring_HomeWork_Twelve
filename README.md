@@ -19,4 +19,4 @@
 #### В текущей реализации - уведомление происходит посредством вывода сообщения в консоль 
 #### о произошедшем событии.
 
-![programm](/src/main/resources/spring_hw12.png)
+![programm](src/main/resources/spring_hw12.png)
