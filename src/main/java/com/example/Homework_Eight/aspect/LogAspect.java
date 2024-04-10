@@ -58,10 +58,12 @@ public class LogAspect {
 
     @Around(value = "@annotation(TrackUserAction)")
     public Object logMethodAnnotation(ProceedingJoinPoint joinPoint) throws Throwable {
+        System.out.println("_____________________________________________________________");
         System.out.println("Пользователь вызвал метод "
                 + joinPoint.getSignature().getName() + ".");
         Object proceed = joinPoint.proceed();
         System.out.println("Метод завершил работу.");
+        System.out.println("_____________________________________________________________");
         return proceed;
     }
 
